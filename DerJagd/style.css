@@ -1,0 +1,1060 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;    
+}
+html{
+	owerflow-x:hidden;
+
+}
+body {
+    background: url('../images/Der Jagd Tier/20170522_174458.jpg') fixed no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.menu {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #098541;
+    position: fixed;
+    z-index: 1;
+    opacity: .9;
+
+}
+
+nav.menu ul {
+    padding: 1.4rem;
+    margin: 0;
+    text-align: center;
+}
+
+nav.menu li {
+    display: inline-block;
+    margin-left: 2%;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+nav.menu .nav-links a {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 500ms;
+}
+
+.nav-links .nav-link a.na::before {
+    content: '';
+    height: 3px;
+    bottom: 5px;
+    width: 0%;
+    background-color: #333e3e;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+
+}
+
+.nav-links .nav-link a.na:hover::before {
+    width: 100%;
+}
+
+nav.menu .nav-link a:hover {
+    color: #333e3e;
+}
+
+.nav-i {
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+nav.menu .logo img {
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+header::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.menu .toggle-btn {
+    position: absolute;
+    border: 1px solid #ffffff;
+    border-radius: 10%;
+    padding: 5px;
+    right: 50px;
+    top: 15px;
+    color: #ffffff;
+    font-size: 25px;
+    transform: rotate(90deg);
+}
+
+.toggle-btn {
+    display: none;
+}
+
+/* drop down*/
+.menu .nav-links .nav-link:hover .dropdown {
+    display: block;
+}
+
+.nav-links .nav-link:hover .dropdown ul li {
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid #333e3e;
+
+}
+
+.dropdown ul li:hover .dropdown2 {
+    display: block;
+
+}
+
+
+.nav-links .nav-link:hover .dropdown ul li:last-child {
+    border: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #098541;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: -30px;
+    margin-top: 5px;
+    min-width: 130px;
+    width: 180px;
+
+}
+
+.dropdown2 {
+    display: none;
+    position: absolute;
+    background-color: #098541;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 120px;
+    margin-top: -25px;
+    min-width: 130px;
+    width: 180px;
+    opacity: 1;
+
+}
+
+.dropdown ul li>a {
+    font-size: 12px !important;
+}
+
+/* drop down*/
+.site-title {
+    margin-top: 70px;
+   
+  
+}
+
+.site-title img {
+    width: 100%;
+    
+}
+.site-img{
+    width: 100%!important;
+   
+}
+
+
+/* sekcija o psima*/
+main.main-index {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.psi {
+    margin: 3rem 6rem;
+
+}
+
+.psi .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #fafafa;
+    width: 60vw;
+    height: auto;
+    padding: 2rem;
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 2rem 0;
+    opacity: 0.8;
+    overflow: hidden;
+    opacity: 0.85 !important;
+}
+
+.levo {
+    margin-right: 1rem;
+    overflow: hidden;
+    z-index: 0;
+
+
+}
+
+.slika {
+    opacity: 1 !important;
+}
+
+.opis .datum>.datum-span {
+    padding-left: 10px;
+    text-align: left;
+    color: #a0a0a0;
+}
+
+.opis .datum>h3 {
+    padding-top: 5px;
+    text-align: center;
+    color: #065d17;
+}
+
+.container .opis .opis-psa {
+    padding: 2.5rem 0rem .5rem .5rem;
+    text-align: left;
+    line-height: 1.3;
+    color: #626262;
+}
+
+.container .levo .slika {
+    width: 100%;
+    height: auto;
+    transition: all 1s ease;
+}
+
+.container .levo .slika:hover,
+.container .levo .slika:focus {
+    transform: scale(1.3);
+}
+
+/* sekcija o psima*/
+/*sidebar*/
+.sidebar {
+    margin: 3rem 2rem;
+}
+
+/*sidebar*/
+
+/*Galerija*/
+.main-gallery {
+    width: 90%;
+    margin: 5%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.responsive {
+    display: flex;
+    margin: 1rem;
+    overflow: hidden;
+    min-width: 400px;
+    width: 23%;
+    min-height: 240px;
+    height: auto;
+    border-radius: 1%;
+}
+
+.gallery img {
+    padding: auto;
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+    transform: scale(1.2);
+}
+
+/*Galerija*/
+/* About section*/
+.main-videos {
+    overflow: hidden;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.video iframe {
+
+    padding: 10px;
+
+}
+
+
+
+
+/* About section*/
+
+
+/*paginacija*/
+/* Pagination links */
+#loop {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+
+}
+
+.pagination a {
+    color: #ffffff;
+    float: left;
+    padding: 8px 16px;
+    background-color: #6ebb86;
+    text-decoration: none;
+    margin: 3px;
+    transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+    background-color: #098541;
+    color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {
+    background-color: #778a79;
+}
+
+
+/*information page*/
+
+.main-info {
+    width: 80%;
+    margin-top: 50px;
+    margin: 0 auto;
+
+
+}
+
+.opis-info {
+    background-color: #eeebeb;
+    height: auto;
+    width: 90%;
+    margin: 4rem auto auto;
+    opacity: .8;
+    padding: 1.4rem;
+    color: #196732;
+
+}
+.opis-info p{
+    padding: 5rem;
+    font-size: 20px;
+    word-spacing: 7px;
+    text-align: center;
+    color: #155329;
+    line-height: 2.3rem;
+}
+
+.opis-info h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.imgcard {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.opis-info h2 span {
+    font-weight: 500;
+    color: #4b5d4b;
+}
+
+.imgcard img {
+
+    width: 80%;
+}
+
+/*information page*/
+/*Litters html*/
+
+.main-litters {
+    width: 70%;
+    margin: 2rem auto;
+
+    overflow: hidden;
+    height: auto;
+    color: #196732;
+}
+
+.litters {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 5rem;
+    background-color: #d0d0d0;
+    opacity: .9;
+
+}
+
+.carousel-litter {
+    width: 100%;
+
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #717171;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.next {
+
+    right: 0;
+
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #a0a0a0;
+    color: #517154;
+}
+
+.litter-img img:hover,
+.litter-img img:focus {
+    transform: scale(1.4);
+}
+
+.naslov-litter p,
+.carousel p {
+    padding: 3rem 1rem;
+    text-align: justify;
+
+}
+
+.naslov-litter h2,
+.datum-span {
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.carousel h2,
+.datum-span {
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.litter-img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.litter-img img {
+    vertical-align: middle;
+    width: 100%;
+    transition: all ease-in-out .5s;
+}
+
+
+/*Litters html*/
+
+/*litters pojedinacno*/
+
+.main-litter {
+    width: 80%;
+    margin: 3rem auto;
+
+
+}
+
+.litter {
+    background-color: #a5c69a;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2rem;
+    color: #244424;
+    opacity: .95;
+    border-radius: 5px;
+
+}
+.naslov-litter a {
+    color:  #244424;
+}
+.carousel .datum-span {
+    color: #295682;
+}
+
+.carousel p {
+    padding: 1rem 5rem;
+}
+
+.carousel-litters {
+    margin: 0 auto;
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.slider {
+    display: none;
+    opacity: 1;
+
+
+}
+
+.slider img {
+    opacity: none;
+    width: 100%;
+
+    max-height: 800px;
+    z-index: inherit 999;
+    opacity: 1;
+}
+
+
+
+
+/*litters pojedinacno*/
+/*Dogs page*/
+
+.main-dogs {
+    width: 70%;
+    margin: 5rem auto 1rem auto;
+    background: #dad6d6;
+    padding: 2% 5%;
+    opacity: .9;
+	overflow:hidden;
+}
+
+.main-dogs h1 {
+    color: #065d17;
+    margin-bottom: 1rem;
+}
+
+.main-dogs h2 {
+    color: #244424;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: .3s;
+    width: 100%;
+height:auto;
+
+}
+
+.main-dogs h2:hover {
+    color: #469a78;
+
+}
+.main-dogs{
+    overflow: hidden;
+}
+.dogs {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 2rem;
+
+}
+
+.dogs::after {
+    content: "";
+
+    margin-top: 1rem;
+    border-bottom: 1px solid #8c8b8b;
+}
+
+.main-dogs .dogs img {
+    width: 90%;
+
+}
+
+.dogs .opis-pasa {
+    margin-left: 0rem;
+
+}
+
+
+
+.opis-pasa h2 {
+    color: #333e3e;
+    text-transform: uppercase;
+    font-weight: 500;
+
+
+}
+
+.opis-pasa p {
+    color: #787878;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.main-dog{
+    width: 60%;
+    margin: 5rem auto;
+    background: #eeebeb;
+    padding:2% 5%;
+    opacity: .9;
+
+}
+
+.main-dog img{
+    width: 100%;
+}
+.main-dog .dog-carousel {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+.main-dog h1 {
+    margin: 1.2rem;
+    text-align: center;
+    color: #098541;
+}
+.main-dog .h3{
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    color: #155632;
+    
+    
+}
+
+.main-dog h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+
+
+}
+.main-dog p{
+    margin-bottom: 2rem;
+    color: #1dae5e;
+}
+.main-dog h2{
+    color: #098541;
+    text-align: left;
+    margin: 2rem;
+}
+
+.majkaotac{
+    width: 90%;
+  
+    
+    
+}
+.majkaotac h2{
+    font-size: 18px;
+    line-height: 25px;
+}
+/*Dogs page*/
+
+
+/*futter*/
+footer {
+    position: relative;
+    background-color: #517154;
+   
+    padding: 2rem;
+    color: #fafafa;
+    text-align: center;
+    
+   
+
+}
+.footer-content{
+    width: 100%;
+    display: grid;
+   
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+}
+.footer2 h4{
+    margin-bottom: 5px;
+    word-spacing: 10px;
+    
+}
+
+.footer2 h4 a{
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 400;
+}
+footer>div {
+    margin: .7rem;
+
+}
+.footer-bottom {
+    position: relative;
+    bottom: 0;
+    margin: 1rem auto 0  auto;
+    
+}
+.footer-bottom a{
+     transition: .4s;
+      color: #ffff;
+    font-size: 18px;
+}
+.footer-bottom:hover a{
+    color: #15382a;
+}
+
+.go-up {
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    right: 3rem;
+    width: 50px;
+    border-radius: 48%;
+    border: none;
+    color: #dad6d6;
+    background: #333e3e;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.go-up:hover {
+    background: transparent;
+    border: 2px solid #333e3e;
+    color: #333e3e;
+}
+
+/*footer*/
+
+@media screen and (max-width:1200px) {
+
+    .main-dogs{
+        width: 80%;
+
+    }
+
+    .opis-info p{
+        padding: 1rem;
+    }
+
+    .main-dogs .dogs img {
+        width: 100%;
+        padding: .6rem;
+
+
+    }
+
+    .dogs .opis-pasa {
+        margin-left: 1rem;
+
+    }
+
+
+
+    .opis-pasa h2 {
+        font-size: 23px;
+        margin-top: .3rem;
+
+    }
+
+    .opis-pasa p {
+        color: #787878;
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .main-dogs .dogs img {
+        width: 100%;
+        padding: 0;
+    }
+    .main-dog{
+        width: 80%;
+        margin: 5rem auto;
+        background: #eeebeb;
+       
+    
+    }
+
+
+}
+
+@media screen and (max-width:970px) {
+
+
+    .litters {
+        width: 100%;
+        margin: .5rem auto;
+        padding: 1rem;
+        background-color: #d0d0d0;
+        opacity: .9;
+
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns:50% 50%;
+    }
+    .footer2{
+        margin: 15px 0;
+    }
+    .main-litters {
+        width: 90%;
+        margin: 2rem auto;
+
+
+        height: auto;
+        color: #196732;
+    }
+
+    .psi .container {
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+
+    .responsive {
+        width: 40%;
+    }
+
+    .dropdown ul li:hover .dropdown2 {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .dropdown2 {
+        display: none;
+        position: relative;
+
+        margin-left: -30px;
+        margin-top: 10px;
+
+        min-width: 130px;
+        width: 180px;
+
+    }
+
+    .main-litter {
+        width: 90%;
+        margin: 1rem auto;
+
+
+    }
+
+    .litter {
+        background: #778a79;
+        margin: 0 auto;
+        width: 95%;
+        padding: 1rem;
+        color: #244424;
+        opacity: .95;
+
+    }
+
+    .carousel .datum-span {
+        color: #295682;
+    }
+
+    .carousel p {
+        padding: 1rem;
+    }
+
+    .dogs {
+
+        grid-template-columns: 100%;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .main-dogs .dogs img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .opis-pasa h2 {
+       
+        margin-top: .5rem;
+
+    }
+
+    .opis-pasa p {
+        color: #787878;
+        font-size: 16px;
+        padding-bottom: 6px;
+    }
+
+    footer .go-up{
+        right: 15px;
+        top: 5px;
+    }
+
+}
+
+
+@media screen and (max-width:770px) {
+
+    .toggle-btn {
+        display: initial;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 50%;
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #098541;
+        padding-top: 70px;
+        text-align: left;
+        transform: translateX(100%);
+        transition: 1s ease;
+        z-index: 1;
+    }
+
+    .menu .nav-links .nav-link {
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .dropdown {
+        max-width: 180px;
+        width: 170px;
+        margin-left: -40px;
+        z-index: 2;
+    }
+
+    .dropdown ul li {
+        display: block;
+    }
+
+    
+    .psi {
+        margin-top: -2vh !important;
+        margin: 1rem;
+    }
+
+    .psi .container .opis {
+        padding-top: 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 100%;
+    }
+    footer .go-up{
+        right: 15px;
+        top: 5px;
+    }
+
+    .responsive {
+        width: 80%;
+    }
+
+    .video iframe {
+
+        min-width: 330px;
+        min-height: 260px;
+
+    }
+    .main-dog{
+        width: 100%;
+
+    }
+    
+    .opis-pasa h2{
+        font-size: 18px;
+        width: auto;
+    }
+    .h3 h3{
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .opis-info p{
+        font-size: 16px;
+        line-height: 1.6rem;
+    }
+
+
+}
+
+
+
+.show {
+    transform: translateX(0%) !important;
+    transition: 1s ease !important;
+}
